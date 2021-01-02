@@ -1,6 +1,7 @@
 package com.example.springstartdemo.controller;
 
 import com.example.springstartdemo.impl.UserServiceImpl;
+import com.example.springstartdemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    private UserServiceImpl userService;
+    private UserService userService;
 
     @GetMapping("/")
     public List<String> getUsers(){
