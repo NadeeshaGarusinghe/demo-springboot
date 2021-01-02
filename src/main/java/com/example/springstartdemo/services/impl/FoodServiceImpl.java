@@ -1,6 +1,5 @@
-package com.example.springstartdemo.service;
+package com.example.springstartdemo.services.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service

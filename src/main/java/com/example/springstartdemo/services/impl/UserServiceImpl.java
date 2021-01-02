@@ -1,7 +1,6 @@
-package com.example.springstartdemo.service;
+package com.example.springstartdemo.services.impl;
 
-import com.example.springstartdemo.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.springstartdemo.services.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

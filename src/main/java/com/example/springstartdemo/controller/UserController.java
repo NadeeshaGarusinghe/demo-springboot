@@ -1,6 +1,6 @@
 package com.example.springstartdemo.controller;
 
-import com.example.springstartdemo.service.UserService;
+import com.example.springstartdemo.services.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
