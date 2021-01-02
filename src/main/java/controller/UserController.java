@@ -8,18 +8,19 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/get")
+@RequestMapping("/user")
 public class UserController {
 
-    @GetMapping("/user")
-    public String getUser(){
-        return "Nadeesha";
-    }
-
-    @GetMapping("/allusers")
-    public List<String> getList(){
+    @GetMapping("/")
+    public List<String> getUsers(){
         List<String> list= Arrays.asList("user1","user2","user3");
         return list;
-
     }
+
+    @GetMapping("/{id}/info")
+    public String getUserInfo(){
+        return "Nadeesha";
+        }
+
+
 }
