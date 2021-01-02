@@ -1,4 +1,4 @@
-package com.example.springstartdemo.impl;
+package com.example.springstartdemo.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

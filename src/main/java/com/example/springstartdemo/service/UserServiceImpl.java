@@ -1,4 +1,4 @@
-package com.example.springstartdemo.impl;
+package com.example.springstartdemo.service;
 
 import com.example.springstartdemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
