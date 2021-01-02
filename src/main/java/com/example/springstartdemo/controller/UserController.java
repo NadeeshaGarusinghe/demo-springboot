@@ -1,5 +1,7 @@
-package controller;
+package com.example.springstartdemo.controller;
 
+import com.example.springstartdemo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,15 +13,18 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
 
+    @Autowired
+    private UserService userService;
+
     @GetMapping("/")
     public List<String> getUsers(){
-        List<String> list= Arrays.asList("user1","user2","user3");
-        return list;
+        return userService.getUsers();
     }
 
-    @GetMapping("/{id}/info")
-    public String getUserInfo(){
-        return "Nadeesha";
+    @GetMapping("/{id}")
+    public String getUserInfo(Integer id){
+        return userService.getUser(id);
+
         }
 
 
